@@ -28,6 +28,11 @@ import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import blender from './blender.svg'
 import devrev from './devrev.svg'
+import python from './python.svg'
+import c from './c.svg'
+import cpp from './cpp.svg'
+import pl from './pl.svg'
+import iiot from './iiot.svg'
 
 export {
     css,
@@ -59,5 +64,10 @@ export {
     soundon,
     soundoff,
     blender,
-    devrev
+    devrev,
+    python,
+    c,
+    cpp,
+    pl,
+    iiot
 }

@@ -24,7 +24,12 @@ import {
     threads,
     typescript,
     blender,
-    devrev
+    devrev,
+    python,
+    c,
+    cpp,
+    pl,
+    iiot
 } from "../assets/icons";
 
 export const skills = [
@@ -68,16 +73,21 @@ export const skills = [
         name: "DevRev",
         type: "CRM",
     },
-    // {
-    //     imageUrl: mui,
-    //     name: "Material-UI",
-    //     type: "Frontend",
-    // },
-    // {
-    //     imageUrl: nextjs,
-    //     name: "Next.js",
-    //     type: "Frontend",
-    // },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Coding",
+    },
+    {
+        imageUrl: c,
+        name: "C",
+        type: "Coding",
+    },
+    {
+        imageUrl: cpp,
+        name: "C++",
+        type: "Coding",
+    },
     {
         imageUrl: nodejs,
         name: "Node.js",
@@ -93,11 +103,6 @@ export const skills = [
         name: "Redux",
         type: "State Management",
     },
-    // {
-    //     imageUrl: sass,
-    //     name: "Sass",
-    //     type: "Frontend",
-    // },
     {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
@@ -114,8 +119,8 @@ export const awards = [
     {
         title: "Industrial IOT Hackathon Winner",
         company_name: "IIT Varnasi",
-        icon: meta,
-        iconBg: "#a2d2ff",
+        icon: iiot,
+        iconBg: "#a70e0e",
         date: "Completed",
         points: [
             "Developed an innovative IoT solution using Raspberry pi 4.",
@@ -127,8 +132,8 @@ export const awards = [
     {
         title: "Digital Twin Workshop",
         company_name: "Praya Labs",
-        icon: meta,
-        iconBg: "#a2d2ff",
+        icon: pl,
+        iconBg: "#fbb652",
         date: "Completed",
         points: [
             "Developed a digital twin of a product using Unity.",
@@ -139,8 +144,8 @@ export const awards = [
     {
         title: "DevRev Hackathon",
         company_name: "DevRev",
-        icon: meta,
-        iconBg: "#a2d2ff",
+        icon: devrev,
+        iconBg: "#5e5b5b",
         date: "Completed",
         points: [
             "Developed a snap-in for the DevRev CRM.",
@@ -170,38 +175,38 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: summiz,
+        theme: 'btn-back-yellow',
+        name: 'AI Smart Traffic Management',
+        description: 'An AI-powered app that creates summaries from lengthy texts, making content easier to digest.',
+        link: 'https://github.com/YourGitHubUsername/project_ai_summarizer',
+    },
+    {
+        iconUrl: snapgram,
+        theme: 'btn-back-pink',
+        name: 'AI Voice Assistant with ESP-8266',
+        description: 'Built a social media clone enabling users to share photos and interact in a familiar environment.',
+        link: 'https://github.com/YourGitHubUsername/social_media_app',
+    },
+    {
         iconUrl: pricewise,
         theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
+        name: 'ATM Simulator',
         description: 'A web app that tracks and notifies users of price changes on Amazon, ensuring users get the best deals.',
         link: 'https://github.com/YourGitHubUsername/pricewise',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
+        name: 'Hospital Management System',
         description: 'A full-stack replica of the discussion platform "Threads" with features for posting and engaging in conversations.',
         link: 'https://github.com/YourGitHubUsername/threads',
     },
     {
-        iconUrl: car,
+        iconUrl: threads,
         theme: 'btn-back-blue',
-        name: 'Car Finding App',
+        name: 'To Do App',
         description: 'Mobile app for finding and comparing cars, simplifying the car-buying process with detailed listings.',
         link: 'https://github.com/YourGitHubUsername/project_car_showcase',
     },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a social media clone enabling users to share photos and interact in a familiar environment.',
-        link: 'https://github.com/YourGitHubUsername/social_media_app',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'An AI-powered app that creates summaries from lengthy texts, making content easier to digest.',
-        link: 'https://github.com/YourGitHubUsername/project_ai_summarizer',
-    }
 ];

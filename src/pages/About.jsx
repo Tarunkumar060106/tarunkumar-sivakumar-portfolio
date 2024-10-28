@@ -46,15 +46,15 @@ const About = () => {
                 <VerticalTimelineElement
                   key={award.company_name}
                   date={award.date}
-                  icon={<div className='flex justify-center items-center w-full h-full'>
-                    <img src={award.icon} alt={award.company_name} className='w-[60%] h-[60%] object-contain'>
-                    </img>
-                  </div>}
-                  iconStyle={{background:award.iconBg}}
+                  icon={
+                    <div className='flex justify-center items-center w-full h-full'>
+                      <img src={award.icon} alt={award.company_name} className='w-[60%] h-[60%] object-contain' />
+                    </div>
+                  }
+                  iconStyle={{ background: award.iconBg || '#a2d2ff' }} // Fallback in case iconBg is undefined
                   contentStyle={{
-                    borderBottom: '8px',
-                    borderStyle: 'solid',
-                    borderBottomColor: award.iconBg,
+                    borderBottom: '8px solid',
+                    borderBottomColor: award.iconBg || '#a2d2ff', // Ensure consistency with a fallback
                     boxShadow: 'none',
                   }}
                 >
@@ -62,16 +62,16 @@ const About = () => {
                     <h3 className='text-black text-xl font-poppins'>
                       {award.title}
                     </h3>
-                    <p className='text-black-500 font-medium font-base' style={{margin:0}}>
+                    <p className='text-black-500 font-medium font-base' style={{ margin: 0 }}>
                       {award.company_name}
                     </p>
                   </div>
                   <ul className='my-5 list-disc ml-5 space-y-2'>
-                    {award.points.map((point, index) =>(
+                    {award.points.map((point, index) => (
                       <li key={`award-point-${index}`} className='text-black-500/50 font-normal pl-1 text-small'>
                         {point}
                       </li>
-                    ) )}
+                    ))}
                   </ul>
                 </VerticalTimelineElement>
               ))}
