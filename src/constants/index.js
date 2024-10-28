@@ -22,19 +22,26 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    blender,
+    devrev
 } from "../assets/icons";
 
 export const skills = [
+    {
+        imageUrl: html,
+        name: "HTML",
+        type: "Frontend",
+    },
     {
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
     },
     {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
+        imageUrl: blender,
+        name: "Blender",
+        type: "3D",
     },
     {
         imageUrl: git,
@@ -47,11 +54,6 @@ export const skills = [
         type: "Version Control",
     },
     {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
-    },
-    {
         imageUrl: javascript,
         name: "JavaScript",
         type: "Frontend",
@@ -62,20 +64,20 @@ export const skills = [
         type: "Database",
     },
     {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
+        imageUrl: devrev,
+        name: "DevRev",
+        type: "CRM",
     },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
-    },
+    // {
+    //     imageUrl: mui,
+    //     name: "Material-UI",
+    //     type: "Frontend",
+    // },
+    // {
+    //     imageUrl: nextjs,
+    //     name: "Next.js",
+    //     type: "Frontend",
+    // },
     {
         imageUrl: nodejs,
         name: "Node.js",
@@ -91,11 +93,11 @@ export const skills = [
         name: "Redux",
         type: "State Management",
     },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
+    // {
+    //     imageUrl: sass,
+    //     name: "Sass",
+    //     type: "Frontend",
+    // },
     {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
