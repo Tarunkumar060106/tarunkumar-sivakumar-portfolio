@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures it takes full viewport height */
+}
+
+/* Main content area should expand to fill available space */
+.content {
+  flex: 1; /* Expands to fill remaining height */
+}
 :root {
   --blue-rgb: 237 245 255;
   --green-rgb: 125 161 35;
