@@ -8,6 +8,7 @@ import Plane from '../models/Plane'
 import HomeInfo from '../components/HomeInfo'
 import sakura from '../assets/sakura.mp3'
 import { soundoff, soundon } from '../assets/icons'
+import Footer from '../components/Footer'
 
 const Home = () => {
   const audioref = useRef(new Audio(sakura));
@@ -98,6 +99,7 @@ const Home = () => {
           onClick={() => setisPlayingMusic(!isPlayingMusic)}
         />
       </div>
+      <Footer />
     </section>
   )
 }
